@@ -1,0 +1,98 @@
+body {
+		margin: 0px;
+}
+
+.holder {
+		height: 100vh;
+		width: 100%;
+		background: url(https://www.nps.gov/common/uploads/grid_builder/pwr/crop16_9/2A84C724-1DD8-B71B-0B0F4361A736E640.jpg?width=950&quality=90&mode=crop);
+		background-size: cover;
+}
+
+.ani {
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+}
+
+.ani svg {
+		height: 200px;
+		width: 200px;
+}
+
+.red {
+		stroke-dasharray: 35;
+		animation: dash 3s cubic-bezier(0.19, .22, .22, .19) 0s infinite;
+		stroke: rgba(255, 255, 255, 1);
+}
+
+.yellow {
+		stroke-dasharray: 35;
+		animation: dash 3.1s cubic-bezier(0.19, .22, .22, .19) .4s infinite;
+		stroke: rgba(236, 240, 241, 0.7);
+}
+
+.green {
+		stroke-dasharray: 35;
+		animation: dash 3s cubic-bezier(0.19, .22, .22, .19) .8s infinite;
+		stroke: rgba(250, 250, 250, 0.5);
+}
+
+@keyframes dash {
+		from {
+				stroke-dashoffset: 140;
+		}
+		to {
+				stroke-dashoffset: 0;
+		}
+}
+
+.colour-toggle {
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		height: 40px;
+		width: 110px;
+		background: rgba(255, 255, 255, 0.6);
+		text-align: center;
+		line-height: 40px;
+		color: #fff;
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-family: 'Roboto', sans-serif;
+		cursor: pointer;
+}
+
+.no-colour-toggle {
+		position: fixed;
+		top: 60px;
+		left: 10px;
+		height: 40px;
+		width: 110px;
+		background: rgba(255, 255, 255, 0.6);
+		text-align: center;
+		line-height: 40px;
+		color: #fff;
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-family: 'Roboto', sans-serif;
+		cursor: pointer;
+}
+
+.red-color {
+		stroke: rgba(231, 76, 60, 0.9);
+}
+
+.yellow-color {
+		stroke: rgba(241, 196, 15, 1);
+}
+
+.green-color {
+		stroke: rgba(26, 188, 156, 0.7);
+}
